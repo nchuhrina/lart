@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+<script>
+    const colorArray = ["url(img/1499775170.jpg)", "url(img/1.jpg)", "url(img/2.jpg)", "url(img/unnamed.jpg)"];
+    let i = 0;
+
+    function changeColor(divObj) {
+
+        divObj.style.backgroundImage = colorArray[i];
+        i++;
+        if (i >= colorArray.length) {
+            i = 0;
+        }
+    }
+
+    setInterval(function () {
+
+        document.getElementById('slider').style.backgroundImage = colorArray[i];
+        i++;
+        if (i >= colorArray.length) {
+            i = 0;
+        }
+    }, 3000);
+
+</script>
+<body>
+<header>
+    <a name="main"></a>
+    <div class="logo--img">
+        <img src="img/logo.png"/>
+    </div>
+    <nav class="navigation--container">
+
+        <a class="navigation--element" href="#main">ГОЛОВНА</a>
+        <a class="navigation--element" href="#services">ПОСЛУГИ</a>
+        <a class="navigation--element" href="#about">ПРО НАС</a>
+        <a class="navigation--element" href="#team">НАША КОМАНДА</a>
+        <a class="navigation--element" href="#course">КУРСИ ГІДІВ</a>
+        <a class="navigation--element" href="#testemon">ВІДГУКИ</a>
+        <a class="navigation--element" href="#progects">ПРОЄКТИ</a>
+        <a class="navigation--element" href="#news">НОВИНИ</a>
+    </nav>
+</header>
+<section class="slider">
+    <div class="slider--container" id='slider' onclick="changeColor(this)">
+        <div class="slider--content">
+
+        </div>
+    </div>
+</section>
+<a name="about"></a>
+<section class="about">
+
+    <div class="about--container">
+        <div class="about--header">
+            Завжди з Вами і для Вас!
+        </div>
+        <div class="about--content">
+            <h3>
+                Львівську Асоціацію Розвитку Туризму (ЛАРТ) створено 2000 року за підтримки Міністерства Міжнародного
+                Розвитку Великої Британії (DFID) у партнерстві із органами державного самоврядування, туристичними
+                фірмами та організаціями Львівщини.
+            </h3>
+            <p>
+                Сьогодні ЛАРТ – це членська (65 Членів-юридичних осіб) неприбуткова організація, яка представляє
+                та забезпечує партнерство між державним та приватним секторами.
+            </p>
+        </div>
+    </div>
+</section>
+<a name="services"></a>
+<section class="services">
+    <div class="services--container">
+        <div class="services--content">
+        </div>
+        <div class="services--content">
+        </div>
+        <div class="services--content">
+        </div>
+    </div>
+</section>
+<a name="team"></a>
+<section class="team">
+
+</section>
+<a name="course"></a>
+<section class="course">
+
+</section>
+<a name="testemon"></a>
+<section class="testemon">
+
+</section>
+<a name="progects"></a>
+<section class="progects">
+
+</section>
+<a name="news"></a>
+<section class="news">
+
+</section>
+<footer>
+    <div class="footer--content">
+        <div class="footer--block">
+            <h2 class="footer--header">
+                Корисні лінки
+            </h2>
+            <a>Львів доступний для всіх</a>
+            <a href="https://www.pbu2020.eu/ua">Програма PL-BY-UA 2020</a>
+            <a>Локальна туристична організація в Перемишлі</a>
+            <a></a>
+        </div>
+        <div class="contact--form footer--block">
+            <h2 class="footer--header">
+                Напишіть нам
+            </h2>
+            <form>
+
+            </form>
+        </div>
+        <div class="footer--block">
+            <h2 class="footer--header">
+                Контакти
+            </h2>
+            <h3>
+                Львівська Асоціація Розвитку Туризму
+            </h3>
+            <h4>
+                Україна, м. Львів-79008, вул. Кривоноса, 1 (Музей сакрального мистецтва)
+            </h4>
+            <p>
+                facebook
+            </p>
+            <p>
+                моб.т. +38 (098) 3046938
+            </p>
+            <p>
+                E-mail: ltb@mail.lviv.ua
+            </p>
+
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
